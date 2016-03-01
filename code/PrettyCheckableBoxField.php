@@ -38,12 +38,15 @@ class PrettyCheckableBoxField extends CheckboxField
     /**
      * @param null $key
      * @param null $val
+     * @return $this
      */
     public function setPrettyCheckableConfig($key = null, $val = null)
     {
         if($key === null || $val === null){
             user_error('Both $key and $val need to have non-null values in setPrettyCheckableConfig()', E_USER_ERROR);
         }
+        $this->pretty_checkable_config[$key] = $val;
+        return $this;
     }
 
     /**
