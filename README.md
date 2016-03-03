@@ -1,5 +1,7 @@
 # silverstripe-pretty-checkable-field
 
+[![Latest Stable Version](https://poser.pugx.org/muskie9/silverstripe-pretty-checkable-field/v/stable)](https://packagist.org/packages/muskie9/silverstripe-pretty-checkable-field) [![Total Downloads](https://poser.pugx.org/muskie9/silverstripe-pretty-checkable-field/downloads)](https://packagist.org/packages/muskie9/silverstripe-pretty-checkable-field) [![Latest Unstable Version](https://poser.pugx.org/muskie9/silverstripe-pretty-checkable-field/v/unstable)](https://packagist.org/packages/muskie9/silverstripe-pretty-checkable-field) [![License](https://poser.pugx.org/muskie9/silverstripe-pretty-checkable-field/license)](https://packagist.org/packages/muskie9/silverstripe-pretty-checkable-field)
+
 Checkbox field adds additional styling to your basic Checkbox fields
 
 ## Requirements
