@@ -30,7 +30,11 @@ class PrettyOptionsetField extends OptionsetField
             Requirements::css(PRETTY_CHECKABLE_FIELD_THIRDPARTY . '/prettyCheckable-2.1.2/dist/prettyCheckable.css');
         }
         Requirements::javascript(PRETTY_CHECKABLE_FIELD_THIRDPARTY . '/prettyCheckable-2.1.2/dist/prettyCheckable.min.js');
-        Requirements::javascript(PRETTY_CHECKABLE_FIELD_JAVASCRIPT . '/pretty.optionset.field.js');
+        if(is_a($this->Form, 'BootstrapForm')){
+            Requirements::javascript(PRETTY_CHECKABLE_FIELD_JAVASCRIPT . 'pretty.optionset.field.bootstrap.js');
+        }else{
+            Requirements::javascript(PRETTY_CHECKABLE_FIELD_JAVASCRIPT . 'pretty.optionset.field.js');
+        }
 
         return parent::Field($properties);
     }
